@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root">
+
+    <com.mobile.emojis.view.RichEditText
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.mobile.emojis.view.RichEditText
+        android:id="@+id/edit"
+        android:layout_below="@id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:singleLine="false"
+        android:maxLines="3"/>
+
+
+    <com.mobile.emojis.view.RichTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        android:id="@+id/text"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColor="@android:color/black" />
+
+    <com.mobile.emojis.view.RichTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:id="@+id/text1"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColor="@android:color/black" />
+
+    <include
+        android:id="@+id/controlbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/control_bar"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+    </include>
+
+</RelativeLayout>

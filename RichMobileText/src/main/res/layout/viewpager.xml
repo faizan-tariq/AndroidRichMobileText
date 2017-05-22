@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/normal"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/backspace"
+            android:layout_marginLeft="@dimen/normal"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="@dimen/column_width"
+            android:src="@drawable/ic_emoji_backspace"
+            android:layout_alignParentRight="true"/>
+
+
+        <ImageView
+            android:id="@+id/keyboard"
+            android:layout_marginRight="@dimen/normal"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="@dimen/column_width"
+            android:src="@drawable/ic_keyboard"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/space"
+            android:layout_marginLeft="@dimen/normal"
+            android:layout_marginRight="@dimen/normal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/column_width"
+            android:layout_toRightOf="@id/keyboard"
+            android:layout_toLeftOf="@id/backspace"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/controls"/>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:padding="@dimen/small">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/normal"
+        android:background="@drawable/emoji_border"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/emojis"
+        android:paddingRight="@dimen/small"
+        android:paddingLeft="@dimen/small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/column_width_small"
+            android:layout_height="@dimen/column_width_small"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_insert_emoji"/>
+
+        <TextView
+            android:paddingRight="@dimen/small"
+            android:paddingLeft="@dimen/small"
+            android:text="@string/label"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/emojis"
+        android:id="@+id/font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="@dimen/none"
+            android:id="@+id/default_font"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/changeable_font_size_default"
+            android:text="A" />
+
+        <TextView
+            android:id="@+id/medium_font"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="@dimen/none"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/changeable_font_size_medium"
+            android:text="A"/>
+
+        <TextView
+            android:id="@+id/large_font"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="@dimen/none"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/changeable_font_size_large"
+            android:text="A"/>
+    </LinearLayout>
+
+</RelativeLayout>
