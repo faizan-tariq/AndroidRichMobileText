@@ -84,6 +84,6 @@ startService(intent);
 R.drawable.ic_insert_emoji
 ```
 
-<img src="https://github.com/faizan-tariq/RichMobileText/blob/master/img0.png" width="250">
-<img src="https://github.com/faizan-tariq/RichMobileText/blob/master/img1.png" width="250">
-<img src="https://github.com/faizan-tariq/RichMobileText/blob/master/img2.png" width="250">
+<img src="https://github.com/faizan-tariq/AndroidRichMobileText/blob/master/img0.png" width="250">
+<img src="https://github.com/faizan-tariq/AndroidRichMobileText/blob/master/img1.png" width="250">
+<img src="https://github.com/faizan-tariq/AndroidRichMobileText/blob/master/img2.png" width="250">
