@@ -31,7 +31,7 @@ Add the following dependency in the dependencies tag of pom.xml file.
 <dependency>
   <groupId>rich.mobile.text</groupId>
   <artifactId>android</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.13</version>
   <type>aar</type>
 </dependency>
 ```
